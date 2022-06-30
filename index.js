@@ -173,8 +173,9 @@ function thueThuNhap(id1, id2, id3) {
   var thueSuat = 0;
   var ketQua = "";
   if (value2 <= 4e6) {
-    //nếu tổng thu nhập năm <= 40 tr
+    //nếu tổng thu nhập năm <= 4 tr
     ketQua = "Không cần nộp thuế nha!";
+    return ketQua;
   } else if (value2 <= 60e6) {
     //nếu tổng thu nhập năm <= 60 tr
     thueSuat = 0.05;
